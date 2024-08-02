@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mode-buttons">
+            <button id="twoPlayers" class="mode-button active">2 игрока</button>
+            <button id="withBot" class="mode-button">С ботом</button>
+        </div>
+        <h1>Крестики-нолики</h1>
+        <div class="board" id="board">
+            <!-- Ячейки доски будут добавлены здесь динамически -->
+        </div>
+        <button id="restartButton">Перезапустить игру</button>
+        <div id="message"></div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
