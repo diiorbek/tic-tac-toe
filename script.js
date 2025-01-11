@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (checkWinner()) {
             showModal(`${currentPlayer} won! 🥳`);
         } else if (boardState.every(cell => cell)) {
-            showModal('Ничья');
+            showModal('Tie!');
         } else {
             if (isBotMode && currentPlayer === 'x') {
                 currentPlayer = 'o';
