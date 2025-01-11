@@ -92,9 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
         updateBoard();
 
         if (checkWinner()) {
-            showModal('o победил');
+            showModal('o won! 🥳');
         } else if (boardState.every(cell => cell)) {
-            showModal('Ничья');
+            showModal('Tie!');
         } else {
             isPlayerTurn = true; // Включаем возможность игрока после хода бота
             currentPlayer = 'x'; // Возвращаем текущего игрока к 'x'
