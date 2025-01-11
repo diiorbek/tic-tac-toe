@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateBoard();
 
         if (checkWinner()) {
-            showModal(`${currentPlayer} победил`);
+            showModal(`${currentPlayer} won! 🥳`);
         } else if (boardState.every(cell => cell)) {
             showModal('Ничья');
         } else {
